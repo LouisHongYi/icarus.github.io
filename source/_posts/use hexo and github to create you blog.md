@@ -1,10 +1,10 @@
 ---
-title: title
+title: use hexo and github to create you blog
 date: 2022-04-20 15:55:39
 tags: blog
 ---
 
-# hexo  github
+
 
 1. 安装最新的 `Node.js`
 
