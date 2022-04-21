@@ -71,6 +71,101 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-demo1112321" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/icarus.github.io/2022/04/21/demo1112321/" class="article-date">
+  <time class="dt-published" datetime="2022-04-21T02:28:41.000Z" itemprop="datePublished">2022-04-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/icarus.github.io/2022/04/21/demo1112321/">demo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>安装最新的 <code>Node.js</code></p>
+<p>-需要使用最新的 <code>node.js</code> 版本，否则安装 <code>hexo</code> 可能会报错。</p>
+</li>
+<li><p>安装git</p>
+</li>
+<li><p>本地git 关联github, 并赋权</p>
+</li>
+<li><p>创建仓库</p>
+<ul>
+<li>仓库务必以 <code>[github.io](&lt;http://github.io&gt;)</code>  结尾。</li>
+</ul>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/121d1373-b2c5-478e-88fa-39cc4527b797/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>到新建仓库， <code>Pages</code> 选择 branch， choose  a theme, and save.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/878e5cea-c70b-4847-bb0a-c4310445907b/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>在自己电脑新建文件夹，右键 <code>Git Bash Here</code> 依次执行：</p>
+<ol>
+<li>安装 hexo <code>npm install hexo-cli -g</code></li>
+<li>验证 <code>hexo -v</code></li>
+<li>初始化 <code>hexo init</code></li>
+<li>安装前端组件 <code>npm install</code></li>
+<li>编译 <code>hexo g</code></li>
+<li>启动服务 <code>hexo s</code> , 成功后不关闭 git bash 窗口</li>
+</ol>
+</li>
+<li><p>访问 <a target="_blank" rel="noopener" href="http://localhost:4000/"><code>http://localhost:4000/</code></a></p>
+</li>
+<li><p>更改 <code>_config.yml</code> 文件</p>
+<ul>
+<li>一共有两处</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 修改url , 你的仓库地址</span></span><br><span class="line"># URL</span><br><span class="line">## <span class="keyword">Set</span> your site url here. <span class="keyword">For</span> example, if you use GitHub Page, <span class="keyword">set</span> url <span class="keyword">as</span> <span class="string">&#x27;&lt;https://username.github.io/project&gt;&#x27;</span></span><br><span class="line">url: <span class="operator">&lt;</span>https:<span class="operator">/</span><span class="operator">/</span>louishongyi.github.io<span class="operator">/</span>icarus.github.io<span class="operator">&gt;</span></span><br><span class="line">permalink: :<span class="keyword">year</span><span class="operator">/</span>:<span class="keyword">month</span><span class="operator">/</span>:<span class="keyword">day</span><span class="operator">/</span>:title<span class="operator">/</span></span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: <span class="literal">true</span> # <span class="keyword">Set</span> <span class="keyword">to</span> <span class="literal">false</span> <span class="keyword">to</span> remove <span class="keyword">trailing</span> <span class="string">&#x27;index.html&#x27;</span> <span class="keyword">from</span> permalinks</span><br><span class="line">  trailing_html: <span class="literal">true</span> # <span class="keyword">Set</span> <span class="keyword">to</span> <span class="literal">false</span> <span class="keyword">to</span> remove <span class="keyword">trailing</span> <span class="string">&#x27;.html&#x27;</span> <span class="keyword">from</span> permalinks</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 修改 type, repository, branch </span></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: <span class="operator">&lt;</span>https:<span class="operator">/</span><span class="operator">/</span>hexo.io<span class="operator">/</span>docs<span class="operator">/</span><span class="keyword">one</span><span class="operator">-</span>command<span class="operator">-</span>deployment<span class="operator">&gt;</span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: <span class="operator">&lt;</span>https:<span class="operator">/</span><span class="operator">/</span>github.com<span class="operator">/</span>LouisHongYi<span class="operator">/</span>icarus.github.io<span class="operator">&gt;</span></span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开你的远程仓库地址。 本地的  <a target="_blank" rel="noopener" href="http://localhost:4000/"><code>http://localhost:4000/</code></a></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a9272b8-d4bd-49db-935c-6fedefe5efc4/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>写文章</p>
+<ol>
+<li><p>安装扩展 <code>npm install hexo-deployer-git</code></p>
+</li>
+<li><p>新建文章 <code>hexo new post &quot;use hexo and github to create you blog&quot;</code></p>
+</li>
+<li><p>然后你会发现 <code>source\\_posts</code> 文件夹下有了两个新的md文件，打开刚刚新建的md, 编辑你的文章</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af3a2e00-cdc7-4fa6-82e4-6febfdbe73ce/Untitled.png" alt="Untitled"></p>
+</li>
+</ol>
+</li>
+<li><p>上传到 github , 然后就可以随时更改了。</p>
+<ul>
+<li>清理 <code>hexo clean</code></li>
+<li>编译 <code>hexo g</code> 生成静态文件</li>
+<li>上传git <code>hexo d</code></li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://louishongyi.github.io/icarus.github.io/2022/04/21/demo1112321/" data-id="cl28enpz100007kz7c5347ry0" data-title="demo" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-use hexo and github to create you blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/icarus.github.io/2022/04/21/use%20hexo%20and%20github%20to%20create%20you%20blog/" class="article-date">
@@ -154,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://louishongyi.github.io/icarus.github.io/2022/04/21/use%20hexo%20and%20github%20to%20create%20you%20blog/" data-id="cl28emlu70000vwz7hx2fborv" data-title="use hexo and github to create you blog" class="article-share-link">Share</a>
+      <a data-url="https://louishongyi.github.io/icarus.github.io/2022/04/21/use%20hexo%20and%20github%20to%20create%20you%20blog/" data-id="cl28enpz400017kz7g0sv4it6" data-title="use hexo and github to create you blog" class="article-share-link">Share</a>
       
       
       
@@ -211,6 +306,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/icarus.github.io/2022/04/21/demo1112321/">demo</a>
+          </li>
         
           <li>
             <a href="/icarus.github.io/2022/04/21/use%20hexo%20and%20github%20to%20create%20you%20blog/">use hexo and github to create you blog</a>
