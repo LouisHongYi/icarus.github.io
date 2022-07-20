@@ -1,4 +1,11 @@
-windows
+---
+title: Nacos spring boot
+date: 2022-07-19 18:35:00
+tags: Nacos springboot
+
+---
+
+
 
 ## 1. 预备环境
 
